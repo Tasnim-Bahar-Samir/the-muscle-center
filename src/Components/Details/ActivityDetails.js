@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './details.css'
 import user from '../../image/img-1.png'
 import Break from '../Break/Break';
-const ActivityDetails = () => {
+const ActivityDetails = ({cart}) => {
     const breakTime = [
         {time:10},
         {time:20},
@@ -10,8 +10,13 @@ const ActivityDetails = () => {
         {time:30},
         {time:40},
     ];
+
+    let exerciseTime = 0;
+    for(const item of cart){
+        exerciseTime += item.time;
+    }
+    
     const [breakPeriod,setBreackPeriod] = useState(breakTime)
-    console.log(breakPeriod)
   return (
     <div>
         <div className='user-details'>
@@ -44,7 +49,7 @@ const ActivityDetails = () => {
     </div>
         <div>                
             <h4>Exercise Details</h4>
-            <h5 className='common'><span>Exersice time</span> <span></span></h5>
+            <h5 className='common'><span>Exersice time</span> <span>{exerciseTime}minutes</span></h5>
             <h5 className='common'><span>Break time</span>  <span></span></h5>
         </div>
     </div>
