@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './details.css'
 import user from '../../image/img-1.png'
 import Break from '../Break/Break';
+import { getFromLocal, setToLocal } from '../Utilities/storage';
 const ActivityDetails = ({cart}) => {
     const breakTime = [
         {id:1,time:10},
@@ -19,7 +20,15 @@ const ActivityDetails = ({cart}) => {
     const [breakPeriod,setBreackPeriod] = useState(0)
     const breakCount = (time)=>{
         setBreackPeriod(time)
+        setToLocal(time)
+       
     }
+    useEffect(()=>{
+        const storedTime = getFromLocal();
+        if(storedTime){
+            setBreackPeriod(storedTime);
+        }
+    },[breakPeriod])
   return (
     <div>
         <div className='user-details'>
