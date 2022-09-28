@@ -13,7 +13,6 @@ const Activities = () => {
     },[])
     const addToCart = (activity)=>{
         const newActivity = [...cart,activity]
-        console.log(newActivity)
         setCart(newActivity);
     }
   return (

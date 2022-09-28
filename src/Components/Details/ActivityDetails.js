@@ -4,11 +4,11 @@ import user from '../../image/img-1.png'
 import Break from '../Break/Break';
 const ActivityDetails = ({cart}) => {
     const breakTime = [
-        {time:10},
-        {time:20},
-        {time:30},
-        {time:30},
-        {time:40},
+        {id:1,time:10},
+        {id:2,time:20},
+        {id:3, time:30},
+        {id:4, time:40},
+        {id:5, time:50},
     ];
 
     let exerciseTime = 0;
@@ -16,7 +16,10 @@ const ActivityDetails = ({cart}) => {
         exerciseTime += item.time;
     }
     
-    const [breakPeriod,setBreackPeriod] = useState(breakTime)
+    const [breakPeriod,setBreackPeriod] = useState(0)
+    const breakCount = (time)=>{
+        setBreackPeriod(time)
+    }
   return (
     <div>
         <div className='user-details'>
@@ -42,7 +45,7 @@ const ActivityDetails = ({cart}) => {
         <h4>Add A Break</h4>
         <div className='break-time'>
             {
-                breakPeriod.map(rest => <Break restTime={rest}/>)
+                breakTime.map(rest => <Break restTime={rest} setBreak = {breakCount} key={rest.id}/>)
             }
         </div>
 
@@ -50,7 +53,7 @@ const ActivityDetails = ({cart}) => {
         <div>                
             <h4>Exercise Details</h4>
             <h5 className='common'><span>Exersice time</span> <span>{exerciseTime}minutes</span></h5>
-            <h5 className='common'><span>Break time</span>  <span></span></h5>
+            <h5 className='common'><span>Break time</span> <span>{breakPeriod}minutes</span></h5>
         </div>
     </div>
   )
