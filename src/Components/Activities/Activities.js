@@ -1,8 +1,15 @@
 import React from 'react'
-
+import './Activities.css'
 const Activities = () => {
   return (
-    <div>Activities</div>
+    <div className='activity-container'>
+        <div>
+            Activities
+        </div>
+        <div>
+            calculation
+        </div>
+    </div>
   )
 }
 

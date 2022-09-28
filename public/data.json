@@ -1,0 +1,50 @@
+[
+    {
+      "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+      "name": "Push-Ups",
+      "age": "20-40",
+      "time": 15,
+      "img": "https://img.freepik.com/free-photo/young-powerful-sportsman-training-push-ups-dark-wall_176420-537.jpg?size=626&ext=jpg&uid=R80482549&ga=GA1.2.952585972.1664394944"
+      
+    },
+    {
+      "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
+      "name": "Weight-Lifting",
+      "age": "20-30",
+      "time": 25,
+      "img": "https://img.freepik.com/free-photo/young-muscular-athlete-practicing-pull-ups-gym-with-barbell_155003-35489.jpg?w=740&t=st=1664395565~exp=1664396165~hmac=b2a99c9ec1a1269d6bfa45de234c6bb2313ed11d0579fb775392ea1ff0c5343c"
+      
+    },
+    {
+      "id": "307f166f-1d04-4573-bc37-2f461ea9d4f7",
+      "name": "Sit-Ups",
+      "age": "20-30",
+      "time": 20,
+      "img": "https://t4.ftcdn.net/jpg/01/42/12/47/240_F_142124718_b2P8fVxggHamVQ5Ty37wW4DXOp9tw7jO.jpg"
+      
+    },
+    {
+      "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
+      "name": "Dumbling",
+      "age": "23-30",
+      "time": 25,
+      "img": "https://img.freepik.com/free-photo/muscular-sportsman-building-biceps-with-dumbbell_7502-4784.jpg?w=740&t=st=1664395763~exp=1664396363~hmac=eaf266ee8bf841a49551c009e325484cafe48b469ce761067ee84515860675b5"
+      
+    },
+    {
+      "id": "9496d72b-04ec-41f8-9bc3-0a7c9697be8e",
+      "name": "Stationary bicycling",
+      "age": "25-35",
+      "time": 30,
+      "img": "https://img.freepik.com/free-photo/athletic-shaved-head-male-two-slim-fitness-female-exercising-with-body-bike-gym-club_613910-11213.jpg?size=626&ext=jpg&uid=R80482549&ga=GA1.2.952585972.1664394944"
+      
+    },
+    {
+      "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
+      "name": "Meditation",
+      "age": "20-70",
+      "time": 40,
+      "img": "https://img.freepik.com/free-photo/healthy-lifestyle-concept-shirtless-young-man-meditating-lotus-pose-sitting-green-grass_613910-6391.jpg?size=626&ext=jpg&uid=R80482549&ga=GA1.2.952585972.1664394944"
+      
+    }
+]
