@@ -17,11 +17,14 @@ const Activities = () => {
     }
   return (
     <div className='activity-container'>
+        <div>
+            <h3 style={{marginTop:'60px',padding:'5px'}}>Select today’s exercises</h3>
         <div className='exercises'>
             {
                 activities.map(activity => <Exercises activity = {activity} key ={activity.id} cartHandler = {addToCart}/>)
             }
          
+        </div>
         </div>
         <div className='activity-details'>
             <ActivityDetails cart ={cart}/>

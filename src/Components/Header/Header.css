@@ -1,0 +1,22 @@
+.header{
+    padding:5px 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px gray;
+    margin-bottom: 5px;
+}
+.header a{
+    text-decoration: none;
+    margin-right: 5px;
+    color: gray;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    color: tomato;
+}
+.logo{
+    width: 30px;
+}
