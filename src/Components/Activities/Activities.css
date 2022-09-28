@@ -8,3 +8,14 @@
     gap: 15px;
     padding: 10px;
 }
+.activity-details{
+    background-color: white;
+    padding: 15px;
+}
+.common{
+    background-color: rgb(238, 238, 245);
+    padding:10px 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,21 @@
+.user-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.physical-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 238, 245);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.break-time{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
