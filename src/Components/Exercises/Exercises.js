@@ -2,7 +2,7 @@ import React from 'react'
 import './Exercises.css'
 
 const Exercises = (props) => {
-    const {id,img,name,age,time} = props.activity
+    const {img,name,age,time} = props.activity
     
   return (
     <div className='exercise'>

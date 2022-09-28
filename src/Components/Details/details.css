@@ -5,6 +5,7 @@
 }
 .physical-details{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(238, 238, 245);
@@ -15,7 +16,24 @@
 .break-time{
     display: flex;
     justify-content: space-around;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     margin-top: 20px;
+}
+.common{
+    background-color: rgb(238, 238, 245);
+    padding:10px 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:662px) {
+    .break-time{
+        flex-wrap: wrap;
+    }
+    .physical-details{
+        gap: 6px;
+    }
 }

@@ -12,10 +12,20 @@
     background-color: white;
     padding: 15px;
 }
-.common{
-    background-color: rgb(238, 238, 245);
-    padding:10px 5px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+
+
+@media screen and (max-width:992px) {
+    .exercises{
+        grid-template-columns: repeat(2,1fr);      
+    }
+}
+
+@media screen and (max-width:662px) {
+    .exercises{
+        grid-template-columns: 1fr;    
+        gap: 10px;  
+    }
+    .activity-container{
+        grid-template-columns: 3fr 2fr;
+    }
 }
