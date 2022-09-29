@@ -40,7 +40,10 @@ const ActivityDetails = ({cart}) => {
     <div>
         <div className='user-details'>
             <img src={user} alt="" />
-            <span>MD Samir</span>
+            <div>
+                <p>MD Samir</p>
+                <p className='location'>Narayonganj,Dhaka</p>
+            </div>
         </div>
         <div className='physical-details'>
             <div>
