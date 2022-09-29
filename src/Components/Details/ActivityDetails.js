@@ -3,6 +3,8 @@ import './details.css'
 import user from '../../image/img-1.png'
 import Break from '../Break/Break';
 import { getFromLocal, setToLocal } from '../Utilities/storage';
+import {ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ActivityDetails = ({cart}) => {
     const breakTime = [
         {id:1,time:10},
@@ -29,7 +31,12 @@ const ActivityDetails = ({cart}) => {
             setBreackPeriod(storedTime);
         }
     },[breakPeriod])
-  return (
+
+    // react toast 
+    const notify = ()=> toast("Congratulation! Your activity was good.");
+  
+  
+    return (
     <div>
         <div className='user-details'>
             <img src={user} alt="" />
@@ -63,6 +70,10 @@ const ActivityDetails = ({cart}) => {
             <h4>Exercise Details</h4>
             <h5 className='common'><span>Exersice time</span> <span>{exerciseTime}minutes</span></h5>
             <h5 className='common'><span>Break time</span> <span>{breakPeriod}minutes</span></h5>
+        </div>
+        <div>
+            <button onClick={notify} style={{marginTop:'20px',padding:'10px'}} className='cart-btn'>Activity Completed</button>
+            <ToastContainer/>
         </div>
     </div>
   )
